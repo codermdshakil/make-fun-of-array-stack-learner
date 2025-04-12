@@ -45,7 +45,7 @@ const pointTable = [
 
 // one dementaion traverse
 for(let i = 0; i < pointTable.length; i++){
-    console.log(`Point ${i} -> x = ${pointTable[i][0]}, y = ${pointTable[i][1]}`);
+    // console.log(`Point ${i} -> x = ${pointTable[i][0]}, y = ${pointTable[i][1]}`);
 }
 
 
@@ -63,7 +63,41 @@ const matrix= [
 for (let i = 0; i < matrix.length; i++) {
 
     for (let j = 0; j < matrix[i].length; j++) {
-        console.log(matrix[i][j]);
+        // console.log(matrix[i][j]);
     }
 }
+
+
+// martix sum
+
+const matrixA = [
+    [4, 6],
+    [5, 6],
+    [7, 8],
+];
+
+const matrixB = [
+    [9, 8],
+    [7, 6],
+    [5, 4],
+];
+
+
+const matrixSum = (matrixA, matrixB) => {
+    const result = [];
+
+    for (let i = 0; i < matrixA.length; i++) {
+        
+        for (let j = 0; j < matrixA[i].length; j++) {
+            const row = [];
+            row.push(matrixA[i][j] + matrixB[i][j])
+            result.push(row)
+        }
+    }
+    return result;
+}
+
+const matrixSumResult = matrixSum(matrixA, matrixB);
+console.log(matrixSumResult);
+
 
