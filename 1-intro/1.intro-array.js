@@ -1,6 +1,8 @@
 
+const welcome = ['hello', 'array', 'today', 'i', 'will', 'understand', 'you', 'deeply'];
 
-console.log('Hey lets rock with array');
-
+console.log(welcome[0]);
+console.log(welcome[1]);
+console.log(welcome[2]);
 
 
