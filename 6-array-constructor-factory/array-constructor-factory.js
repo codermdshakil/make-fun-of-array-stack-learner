@@ -11,7 +11,7 @@ let numbers = [1, 2, 3];
 console.log(numbers);
 
 /**
- * Array constructor is creating array using new Array 
+ * Array constructor is creating array using new Array - when we know the length of array element so then we can use this pattern
  * Array Factory is creating array is just []
  */
 
