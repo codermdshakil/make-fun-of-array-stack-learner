@@ -26,10 +26,3 @@ const arrS1 = [1,2,3,5,9];
 arrS1.splice(3, 0, 4); // 3 -> index, 0 -> 0 item will be deleted, 4 -> value that i want to insert 
 
 
-
-
-
-
-
-
-
