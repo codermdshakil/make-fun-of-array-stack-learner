@@ -11,8 +11,11 @@
  * 3. access when nesessary
  * console.log(names[0])
  *  
- * 
- * 
+ * JS array is dynamic
+ * - Don't need to specify array length
+ * - Dynamically increase/decrease array size
+ * - Don't need to collect garbage
+ * - All kind of data we can store in array
  * 
 */
 
