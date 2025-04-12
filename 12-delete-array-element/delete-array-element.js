@@ -56,7 +56,25 @@ let numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 
 
 
+//* Reset whole array
 
+let x = [1,2,3];
+let y = x;
+x =[];
+
+// x value will be result but y value don't because y variable has own memory alocation and own reference
+
+
+//* alternative way to reset array 
+
+// let xx = [1,2,3,4];
+// let yy = xx;
+// xx.length = 0; // using it will result all value in xx also yy value
+
+//* reset array using while loop + pop
+while(numbers.length){
+    numbers.pop();
+}
 
 
 
