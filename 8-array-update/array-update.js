@@ -41,7 +41,9 @@ function update(arr){
     return arr;
 }
 
-update(names); // [ '1. shakil', '2. noyon', '3. nadim' ]
-// console.log(names);
+const result = update(names); // [ '1. shakil', '2. noyon', '3. nadim' ]
+// console.log(result);
+console.log(names); //[ '1. shakil', '2. noyon', '3. nadim' ]
+console.log(result); //[ '1. shakil', '2. noyon', '3. nadim' ]
 
 
