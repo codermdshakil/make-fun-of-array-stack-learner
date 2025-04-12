@@ -27,10 +27,43 @@ const mod = (a, b) => a % b;
 const funcs = [sum, sub, mul, div, mod];
 const a = 10, b= 20;
 
-for (let i = 0; i < funcs.length; i++) {
+// for (let i = 0; i < funcs.length; i++) {
 
-    const result = funcs[i](a, b);
-    console.log(`[${funcs[i].name}] Result = ${result}`);
+//     const result = funcs[i](a, b);
+//     console.log(`[${funcs[i].name}] Result = ${result}`);
+// }
+
+
+// array of array or two dimentional array
+const pointTable = [
+    [0,0],
+    [3,5],
+    [5,7],
+    [10,23]
+];
+
+
+// one dementaion traverse
+for(let i = 0; i < pointTable.length; i++){
+    console.log(`Point ${i} -> x = ${pointTable[i][0]}, y = ${pointTable[i][1]}`);
 }
 
+
+// two dimentional traverse
+
+const matrix= [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [10,11,12]
+];
+
+// console.log(matrix);
+
+for (let i = 0; i < matrix.length; i++) {
+
+    for (let j = 0; j < matrix[i].length; j++) {
+        console.log(matrix[i][j]);
+    }
+}
 
