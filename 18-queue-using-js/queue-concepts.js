@@ -32,7 +32,7 @@ class Queue{
             console.log('Queue is full');
             return false;
         }
-        
+
         this.queue[this.rear++] = item;
 
     }
@@ -76,8 +76,6 @@ class Queue{
 
 }
 
+module.exports = Queue;
 
-
-
-  
 
