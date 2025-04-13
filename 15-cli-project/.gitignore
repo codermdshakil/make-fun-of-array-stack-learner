@@ -1,0 +1,26 @@
+# Node modules (this is big and should not be pushed)
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Optional: Ignore build/output folders
+dist/
+build/
+
+# Optional: Ignore coverage reports
+coverage/
+
+# Optional: Ignore IDE/editor files
+.vscode/
+.idea/
+*.swp
