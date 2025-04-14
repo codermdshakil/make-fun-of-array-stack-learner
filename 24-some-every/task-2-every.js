@@ -12,13 +12,14 @@ const studentArray = [
 // some implementation
 function myEvery(array, callback) {
   for (let i = 0; i < array.length; i++) {
-    if (callback(array[i], i, array)) {
-      return true; // if one item passes the test
+    if (!callback(array[i], i, array)) {
+      return false; // if one item false then return false
     }
   }
-  return false; // none passed
+  return true; // every items should pass the test
 }
 
 const result = myEvery(studentArray,(student) => student.dueAmount > 0);
-// console.log(result); // true
+// console.log(result); // False
+
 
