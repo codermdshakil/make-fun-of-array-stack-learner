@@ -46,32 +46,59 @@ const react = {
 const courses = [js, node, react];
 // console.log(courses);
 
-const inspectArticle = (course) => {
-    const path = 'contents.article.count';
-    return path.split('.').reduce((acc, field) => {
-        if(acc){
-            return acc[field];
-        }
-        return 0;
-    }, course);
-};
-
+// const inspectArticle = (course) => {
+//   const path = "contents.article.count";
+//   return path.split(".").reduce((acc, field) => {
+//     if (acc) {
+//       return acc[field];
+//     }
+//     return 0;
+//   }, course);
+// };
 
 // using inspectArray function where use reduce
+
 // console.time('forEach + reduce');
-courses.forEach((course) => {
-   console.log(`${course.name} has - Article: ${inspectArticle(course)}`); 
-});
+// courses.forEach((course) => {
+//   console.log(`${course.name} has - Article: ${inspectArticle(course)}`);
+// });
 // console.timeEnd('forEach + reduce');
 
- 
 // using forEach method
+
 // console.time('forEach ');
-courses.forEach((course) => {
-   console.log(`${course.name} has - Article: ${course.contents?.article ? course.contents?.article.count:'0' }`); 
-});
+// courses.forEach((course) => {
+//   console.log(
+//     `${course.name} has - Article: ${
+//       course.contents?.article ? course.contents?.article.count : "0"
+//     }`
+//   );
+// });
 // console.timeEnd('forEach ');
 
 // Time Efficiency
-// forEach : 13.682ms 
+// forEach : 13.682ms
 // forEach + reduce: 0.767ms
+
+// Create inpect objest for any object
+
+const inspectObj = (obj, path, inisialReturnValue=0) => {
+  return path.split(".").reduce((acc, field) => {
+    if (acc) {
+      return acc[field];
+    }
+    return inisialReturnValue;
+  }, obj);
+};
+
+
+courses.forEach((course) => {
+    const countVideo = inspectObj(course, 'contents.video.count');
+    const countArticle = inspectObj(course, 'contents.article.count');
+    const countQuiz = inspectObj(course, 'contents.quiz.count');
+    console.log(`Total Video: ${countVideo}, Total Article: ${countArticle}, Total Quiz: ${countQuiz}`);
+});
+
+
+
+
