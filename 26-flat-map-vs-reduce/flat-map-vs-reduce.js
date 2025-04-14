@@ -17,3 +17,12 @@ const flatMap3 = arr.flatMap((x) => [x,x*2]); // [ 1, 2, 2, 4, 3, 6, 4, 8 ]
 // console.log(flatMap3); 
 
 
+// using reduce flat map
+const reducedFlatMap = arr.reduce((acc, cur) => {
+    return acc.concat([cur, cur * 2]); // [ 1, 2, 2, 4, 3, 6, 4, 8]
+}, []);
+
+// console.log(reducedFlatMap);
+
+
+
