@@ -20,6 +20,24 @@ const numbers = [12, 48, 3, 30, 19, 25, 7, 44, 1, 27, 38, 52, 16, 5, 33];
 
 
 
+// String array sort
+const strings = ['apple','Cat', 'Ball', 'Apple'];
+strings.sort((a, b) => {
+
+    // best practice
+    a = a.toLowerCase();
+    b = b.toLowerCase();
+
+    if(a > b) return 1;
+    if(b > a) return -1;
+    return 0; 
+});
+
+// console.log(strings); // [ 'apple', 'Apple', 'Ball', 'Cat' ]
+
+
+
+
 
 
 
