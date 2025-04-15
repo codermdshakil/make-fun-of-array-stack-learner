@@ -166,4 +166,36 @@ contacts.sort((a, b) => {
 // console.log(contacts);
 
 
+const group = contacts.reduce((acc, cur) => {
+
+    const groupName = cur.name.charAt(0).toUpperCase();
+
+    if(acc[groupName]){
+        acc[groupName].push(cur);
+    }
+    else{
+        acc[groupName] = [cur]
+    }
+
+    return acc;
+
+}, {});
+
+// console.log(group);
+
+// display contact informations
+const displayList = group => {
+    console.log('Displauing Contact information!');
+    console.log('------------------------------------');
+    const keys = Object.keys(group);
+    keys.forEach((key) => {
+        console.log(`Group : ${key}`);
+        console.table(group[key])
+
+    })
+
+}
+
+displayList(group);
+
 
