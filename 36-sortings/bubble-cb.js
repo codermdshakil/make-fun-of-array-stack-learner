@@ -31,3 +31,6 @@ const bubbleSort = (array, cb) => {
 // bubbleSort(team, (a, b) => b.id > a.id);
 // console.log(team);
 
+// sort by name
+bubbleSort(team, (a, b) => a.name > b.name);
+// console.log(team);
