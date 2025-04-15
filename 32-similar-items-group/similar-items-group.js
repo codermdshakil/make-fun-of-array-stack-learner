@@ -26,7 +26,7 @@ const result = words.reduce((acc, cur) => {
 }, {});
 
 
-console.log(result);
+// console.log(result);//
 
 
 
