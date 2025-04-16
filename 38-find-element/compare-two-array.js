@@ -1,7 +1,6 @@
 
 // Compare two array
-const arr1 = [1,2,3,4,5];
-const arr2 = [1,2,3,4,5];
+const arr1 = [1,2,3,4,5],arr2 = [1,2,3,4,5];
 
 // arr1 === arr2 // false why because reference are different
 
