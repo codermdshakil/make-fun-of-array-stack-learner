@@ -3,6 +3,8 @@
 const arr1 = [1,2,3,4,5];
 const arr2 = [1,2,3,4,5];
 
+// arr1 === arr2 // false why because reference are different
+
 // Compare two array equal or not
 // if(JSON.stringify(arr1) === JSON.stringify(arr2)){
 //     console.log('Equal');
