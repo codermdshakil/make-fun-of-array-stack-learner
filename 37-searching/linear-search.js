@@ -36,3 +36,4 @@ const linearSearchCb = (arr, cb) => {
 const s3 = linearSearchCb(team, (item) => item.name === 'Ethan Edwards');
 console.log(s3);
 
+
