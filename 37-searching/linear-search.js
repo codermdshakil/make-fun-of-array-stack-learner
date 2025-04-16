@@ -21,3 +21,18 @@ const linearSearch = (arr, key) => {
 
 // const s1 = linearSearch(arr,3);
 // console.log(s1);
+
+// Learner search with callback so that i can use it object array 
+
+const linearSearchCb = (arr, cb) => {
+  for(let i = 0; i < arr.length; i++){
+    if(cb(arr[i])){
+      return i; // return index
+    }
+  }
+  return -1;
+}
+
+const s3 = linearSearchCb(team, (item) => item.name === 'Ethan Edwards');
+console.log(s3);
+
